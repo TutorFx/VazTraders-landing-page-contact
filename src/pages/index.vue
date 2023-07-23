@@ -77,7 +77,7 @@
         <nuxt-img class="object-cover w-full h-full" src="/assets/images/verdadeiro-tesouro.jpg"
           sizes="xs:414px sm:600px lg:1024px" densities="x1 x2 x3 x4" />
         <div class="absolute inset-0 grid justify-center items-end py-3 md:py-6">
-          <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:8px sm:16px lg:32px" densities="x1 x2 x3 x4"
+          <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:8px sm:16px lg:32px"
             class="animate-bounce" />
         </div>
       </div>
@@ -87,7 +87,7 @@
             sizes="xs:414px sm:600px lg:1024px" densities="x1 x2 x3 x4" />
         </div>
         <div class="grid justify-center items-end py-8 md:py-24">
-          <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:8px sm:16px lg:32px" densities="x1 x2 x3 x4"
+          <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:8px sm:16px lg:32px"
             class="animate-bounce" />
         </div>
       </div>
@@ -107,7 +107,7 @@
     </section>
     <section>
       <div class="max-w-5xl mx-auto grid justify-center items-end py-16">
-        <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:8px sm:16px lg:32px" densities="x1 x2 x3 x4"
+        <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:8px sm:16px lg:32px"
           class="animate-bounce" />
       </div>
     </section>

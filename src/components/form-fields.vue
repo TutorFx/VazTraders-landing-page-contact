@@ -50,7 +50,7 @@ const trigger = async () => {
   isTouched.value = true;
   try {
     schema.parse(state.value)
-    await $fetch('/api/v1/send', { body: state.value })
+    await $fetch('/api/v1/send', { body: state.value, method: 'POST' })
   } catch (e) {
     if (e instanceof ZodError) {
       console.error('Invalid Form Data')

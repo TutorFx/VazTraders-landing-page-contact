@@ -19,6 +19,7 @@
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@vueuse/core": "^10.2.1",
+    "googleapis": "^122.0.0",
     "maska": "^2.1.9",
     "moment": "^2.29.4",
     "sass": "^1.64.0",
