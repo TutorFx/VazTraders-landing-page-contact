@@ -13,7 +13,7 @@ export default defineEventHandler(async (event) => {
 
     const sheets = google.sheets({ version: 'v4', auth });
     // @ts-expect-error
-    sheets.spreadsheets.values.append({
+    await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.SHEET_ID,
       range: 'Cadastro!A3',
       valueInputOption: "USER_ENTERED",
