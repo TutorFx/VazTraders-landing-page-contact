@@ -13,8 +13,8 @@
         <nuxt-img class="object-cover w-full h-full" src="/assets/images/dica-incrivel.jpg"
           sizes="xs:414px sm:600px lg:1024px" densities="x1 x2 x3 x4" />
         <div class="absolute inset-0 grid justify-center items-end py-8 md:py-24">
-          <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:8px sm:16px lg:32px" densities="x1 x2 x3 x4"
-            class="animate-bounce" />
+          <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:8px sm:16px lg:32px xl:32px xxl:32px 2xl:32px"
+            densities="x1 x2 x3 x4" class="animate-bounce w-2 sm:w-4 lg:w-8" />
         </div>
       </div>
       <div class="block md:hidden">
@@ -23,17 +23,19 @@
             sizes="xs:414px sm:600px lg:1024px" densities="x1 x2 x3 x4" />
         </div>
         <div class="grid justify-center items-end py-8 md:py-24">
-          <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:8px sm:16px lg:32px" densities="x1 x2 x3 x4"
-            class="animate-bounce" />
+          <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:8px sm:16px lg:32px xl:32px xxl:32px 2xl:32px"
+            densities="x1 x2 x3 x4" class="animate-bounce w-2 sm:w-4 lg:w-8" />
         </div>
       </div>
     </section>
     <section>
-      <div class="max-w-3xl max-md:px-6 mx-auto grid md:grid-flow-col grid-flow-row md:grid-cols-2 gap-6 pb-24 max-sm:pb-12">
+      <div
+        class="max-w-3xl max-md:px-6 mx-auto grid md:grid-flow-col grid-flow-row md:grid-cols-2 gap-6 pb-24 max-sm:pb-12">
         <div class="max-w-md">
           <div class="grid gap-6 text-white max-sm:text-center">
             <div>
-              <nuxt-img class="max-sm:mx-auto" src="/assets/images/logo.png" sizes="xs:65px sm:120px lg:160px" densities="x1 x2 x3 x4" />
+              <nuxt-img class="max-sm:mx-auto" src="/assets/images/logo.png" sizes="xs:65px sm:120px lg:160px"
+                densities="x1 x2 x3 x4" />
             </div>
             <div class="font-light text-2xl max-sm:text-xl">
               Isso mesmo, você terá
@@ -77,8 +79,8 @@
         <nuxt-img class="object-cover w-full h-full" src="/assets/images/verdadeiro-tesouro.jpg"
           sizes="xs:414px sm:600px lg:1024px" densities="x1 x2 x3 x4" />
         <div class="absolute inset-0 grid justify-center items-end py-3 md:py-6">
-          <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:8px sm:16px lg:32px"
-            class="animate-bounce" />
+          <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:8px sm:16px lg:32px xl:32px xxl:32px 2xl:32px"
+            class="animate-bounce w-2 sm:w-4 lg:w-8" />
         </div>
       </div>
       <div class="block md:hidden">
@@ -87,8 +89,8 @@
             sizes="xs:414px sm:600px lg:1024px" densities="x1 x2 x3 x4" />
         </div>
         <div class="grid justify-center items-end py-8 md:py-24">
-          <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:8px sm:16px lg:32px"
-            class="animate-bounce" />
+          <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:8px sm:16px lg:32px xl:32px xxl:32px 2xl:32px"
+            densities="x1 x2 x3 x4" class="animate-bounce w-2 sm:w-4 lg:w-8" />
         </div>
       </div>
     </section>
@@ -107,8 +109,8 @@
     </section>
     <section>
       <div class="max-w-5xl mx-auto grid justify-center items-end py-16">
-        <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:8px sm:16px lg:32px"
-          class="animate-bounce" />
+        <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:8px sm:16px lg:32px xl:32px xxl:32px 2xl:32px"
+          densities="x1 x2 x3 x4" class="animate-bounce w-2 sm:w-4 lg:w-8" />
       </div>
     </section>
     <section>
