@@ -1,5 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      title: 'Luís Vaz',
+      meta: [
+        {
+          name: 'description', content: `Isso mesmo, você terá a oportunidade de
+          pegar minhas dicas e GANHAR DINHEIRO
+          em tempo real!`
+        }
+      ],
+    }
+  },
   srcDir: 'src/',
   modules: [
     '@nuxtjs/tailwindcss',
@@ -27,6 +39,9 @@ export default defineNuxtConfig({
     transpile: ['vue-toastification'],
   },
   css: ['@/assets/styles.scss'],
+  routeRules: {
+    '/': { static: true },
+  },
   vite: {
     css: {
       preprocessorOptions: {
