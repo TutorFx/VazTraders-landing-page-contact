@@ -28,10 +28,15 @@
 <script setup lang="ts">
 import { FetchError } from 'ofetch'
 import { ZodError } from 'zod'
+import { useToast } from 'vue-toastification';
+
+const toast = useToast();
 
 const schema = FormSchema();
 
-const state = ref({ email: '', nome: '', celular: '' })
+const default_value = { email: '', nome: '', celular: '' }
+
+const state = ref({ ...default_value })
 const isTouched = ref(false)
 
 const result = computed(() => schema.safeParse(state.value));
@@ -51,12 +56,16 @@ const trigger = async () => {
   try {
     schema.parse(state.value)
     await $fetch('/api/v1/send', { body: state.value, method: 'POST' })
+    toast.success('Obrigado por inscrever-se')
+    state.value = default_value;
   } catch (e) {
     if (e instanceof ZodError) {
       console.error('Invalid Form Data')
+      toast.error('Dados inválidos')
     };
     if (e instanceof FetchError) {
       console.error('Server Error')
+      console.error('Ocorreu um erro ao enviar dados')
     };
   }
 }

@@ -36,7 +36,6 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
-    
     public: {
       youtube: 'https://www.youtube.com/LuisVazTrader',
       instagram: 'https://instagram.com/oluisvaz',
