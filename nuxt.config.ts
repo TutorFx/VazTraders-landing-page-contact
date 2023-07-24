@@ -39,6 +39,9 @@ export default defineNuxtConfig({
     transpile: ['vue-toastification'],
   },
   css: ['@/assets/styles.scss'],
+  routeRules: {
+    '/': { static: true },
+  },
   vite: {
     css: {
       preprocessorOptions: {
