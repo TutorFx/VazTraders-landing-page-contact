@@ -28,6 +28,7 @@ export default defineNuxtConfig({
       xxl: 1536,
       '2xl': 1536
     },
+    format: ['webp'],
     densities: [1, 2, 3],
   },
   build: {
