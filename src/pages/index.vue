@@ -11,7 +11,9 @@
     <section>
       <div class="max-w-5xl mx-auto aspect-[256/179] relative isloading rounded-md hidden md:block">
         <nuxt-img class="object-cover w-full h-full" src="/assets/images/dica-incrivel.jpg"
-          sizes="xs:414px sm:600px lg:1024px" densities="x1 x2 x3 x4" />
+          sizes="xs:414px sm:600px lg:1024px" densities="x1 x2 x3 x4"
+          aria-label="Estou aqui para compartilhar uma dica incrível que vai transformar sua jornada financeira! 
+          Sou o Luís Vaz, e todos os dias, às 8h e às 18h, realizo lives imperdíveis onde compartilho entradas ao vivo em Opções Binárias e Forex." />
         <div class="absolute inset-0 grid justify-center items-end py-8 md:py-24">
           <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:16px sm:16px lg:32px xl:32px xxl:32px 2xl:32px"
             densities="x1 x2 x3 x4" class="animate-bounce w-4 sm:w-4 lg:w-8" />
@@ -20,7 +22,9 @@
       <div class="block md:hidden">
         <div class="max-w-5xl mx-auto aspect-[1024/1405] relative isloading rounded-md">
           <nuxt-img class="object-cover w-full h-full" src="/assets/images/dica-incrivel-mobile.jpg"
-            sizes="xs:414px sm:600px lg:1024px" densities="x1 x2 x3 x4" />
+            sizes="xs:414px sm:600px lg:1024px" densities="x1 x2 x3 x4"
+            aria-label="Estou aqui para compartilhar uma dica incrível que vai transformar sua jornada financeira! 
+          Sou o Luís Vaz, e todos os dias, às 8h e às 18h, realizo lives imperdíveis onde compartilho entradas ao vivo em Opções Binárias e Forex." />
         </div>
         <div class="grid justify-center items-end py-8 md:py-24">
           <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:16px sm:16px lg:32px xl:32px xxl:32px 2xl:32px"
@@ -34,8 +38,8 @@
         <div class="max-w-md">
           <div class="grid gap-6 text-white max-sm:text-center">
             <div>
-              <nuxt-img class="max-sm:mx-auto w-32 sm:w-32 lg:w-40" src="/assets/images/logo.png" sizes="xs:65px sm:120px lg:160px"
-                densities="x1 x2 x3 x4" />
+              <nuxt-img class="max-sm:mx-auto w-32 sm:w-32 lg:w-40" src="/assets/images/logo.png"
+                sizes="xs:65px sm:120px lg:160px" densities="x1 x2 x3 x4" />
             </div>
             <div class="font-light text-2xl max-sm:text-xl">
               Isso mesmo, você terá
@@ -56,7 +60,13 @@
     <section>
       <div class="max-w-5xl mx-auto aspect-[1024/295] isloading rounded-md hidden md:block">
         <nuxt-img class="object-cover w-full h-full" src="/assets/images/canal-print.jpg"
-          sizes="xs:414px sm:600px lg:1024px" densities="x1 x2 x3 x4" />
+          sizes="xs:414px sm:600px lg:1024px" densities="x1 x2 x3 x4" aria-label="LIVE DE OPERAÇÕES TODO DIA ÀS 08:00 E ÁS 18:00
+          ATIVE AS NOTIFICAÇÕES
+          Luis Vaz
+          @olusVaz 60,3 mil subscritores 360 videos
+          Subscrito
+          Aderir
+          Luis Vaz está no mercado financeiro a 12 anos. De engraxate a milionário" />
       </div>
       <div class="max-w-5xl mx-auto aspect-[751/568] isloading rounded-md block md:hidden">
         <nuxt-img class="object-cover w-full h-full" src="/assets/images/canal-print-mobile.jpg"
@@ -77,7 +87,8 @@
     <section>
       <div class="max-w-5xl mx-auto aspect-[256/153] relative isloading rounded-md hidden md:block">
         <nuxt-img class="object-cover w-full h-full" src="/assets/images/verdadeiro-tesouro.jpg"
-          sizes="xs:414px sm:600px lg:1024px" densities="x1 x2 x3 x4" />
+          sizes="xs:414px sm:600px lg:1024px" densities="x1 x2 x3 x4"
+          aria-label="No meu canal, você encontrará um verdadeiro tesouro de conhecimento e insights para alcançar seus objetivos financeiros. Sou apaixonado por ajudar as pessoas a prosperarem, e nas minhas lives diárias, compartilho estratégias poderosas e análises em tempo real." />
         <div class="absolute inset-0 grid justify-center items-end py-3 md:py-6">
           <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:16px sm:16px lg:32px xl:32px xxl:32px 2xl:32px"
             class="animate-bounce w-4 sm:w-4 lg:w-8" />
@@ -86,7 +97,8 @@
       <div class="block md:hidden">
         <div class="max-w-5xl mx-auto aspect-[1024/1154] relative isloading rounded-md">
           <nuxt-img class="object-cover w-full h-full" src="/assets/images/verdadeiro-tesouro-mobile.jpg"
-            sizes="xs:414px sm:600px lg:1024px" densities="x1 x2 x3 x4" />
+            sizes="xs:414px sm:600px lg:1024px" densities="x1 x2 x3 x4"
+            aria-label="No meu canal, você encontrará um verdadeiro tesouro de conhecimento e insights para alcançar seus objetivos financeiros. Sou apaixonado por ajudar as pessoas a prosperarem, e nas minhas lives diárias, compartilho estratégias poderosas e análises em tempo real." />
         </div>
         <div class="grid justify-center items-end py-8 md:py-24">
           <nuxt-img src="/assets/images/scroll-alert.png" sizes="xs:16px sm:16px lg:32px xl:32px xxl:32px 2xl:32px"
@@ -154,5 +166,4 @@
         Todos os direitos reservados © — VazTraders
       </div>
     </section>
-  </div>
-</template>
+</div></template>
