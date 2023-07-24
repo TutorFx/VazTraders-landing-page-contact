@@ -34,7 +34,7 @@
         <div class="max-w-md">
           <div class="grid gap-6 text-white max-sm:text-center">
             <div>
-              <nuxt-img class="max-sm:mx-auto" src="/assets/images/logo.png" sizes="xs:65px sm:120px lg:160px"
+              <nuxt-img class="max-sm:mx-auto w-16 sm:w-32 lg:w-40" src="/assets/images/logo.png" sizes="xs:65px sm:120px lg:160px"
                 densities="x1 x2 x3 x4" />
             </div>
             <div class="font-light text-2xl max-sm:text-xl">
