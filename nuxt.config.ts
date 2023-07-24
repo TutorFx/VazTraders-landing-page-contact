@@ -24,6 +24,7 @@ export default defineNuxtConfig({
         src: 'src/templates/app.html',
       }
     ],
+    transpile: ['vue-toastification'],
   },
   css: ['@/assets/styles.scss'],
   vite: {
