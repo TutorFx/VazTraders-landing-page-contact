@@ -44,29 +44,12 @@
 </template>
 
 <script setup lang="ts">
-import { useTimestamp } from '@vueuse/core'
 import moment from 'moment'
 
-const timestamp = useTimestamp({ offset: 0 })
-const target = ref(moment().hour(20).minute(0).second(0))
-const current = computed(() => moment(timestamp.value))
-const duration = computed(() => moment.duration(target.value.diff(current.value)));
-const pendingtime = computed(() => ({
-  hours: Math.floor(duration.value.asHours()),
-  minutes: Math.floor(duration.value.asMinutes()) % 60,
-  seconds: Math.floor(duration.value.asSeconds()) % 60
-}))
-
-enum TheMoment {
-  running,
-  waiting,
-  tomorrow,
-}
-
-const status = computed(() => {
-  if (current.value.isBetween(target.value, moment(target.value).add(1, 'h'))) return TheMoment.running;
-  if (current.value.isAfter(moment(target.value).add(1, 'h'))) return TheMoment.tomorrow;
-  if (current.value.isBefore(target.value)) return TheMoment.waiting;
-  return TheMoment.running;
-})
+const livetime = new LiveTime()
+livetime.add(moment().hour(8).minute(0).second(0), 3)
+livetime.add(moment().hour(18).minute(0).second(0), 3)
+const pendingtime = livetime.getPendingTime()
+const status = livetime.getStatus()
+const TheMoment = livetime.getStatusEnum()
 </script>
