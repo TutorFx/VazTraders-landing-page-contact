@@ -58,7 +58,8 @@ const trigger = async () => {
     await $fetch('/api/v1/send', { body: state.value, method: 'POST' })
     const toast = useToast();
     toast.success('Obrigado por inscrever-se')
-    state.value = default_value;
+    state.value = { ...default_value };
+    isTouched.value = false;
   } catch (e) {
     if (e instanceof ZodError) {
       console.error('Invalid Form Data')
