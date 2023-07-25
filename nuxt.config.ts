@@ -41,6 +41,7 @@ export default defineNuxtConfig({
   },
   css: ['@/assets/styles.scss'],
   routeRules: {
+    '/': { static: true },
   },
   vite: {
     css: {
