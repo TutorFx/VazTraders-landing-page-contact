@@ -7,10 +7,7 @@
             Ao vivo agora no YouTube
           </span>
 
-          <span class="relative -mr-10">
-            <Icon name="logos:youtube-icon" class="text-red-500 animate-ping relative -left-1/2" />
-            <Icon name="logos:youtube-icon" class="text-red-500 relative" />
-          </span>
+          <Icon name="logos:youtube-icon" class="text-red-500 relative" />
 
           <Icon name="material-symbols:arrow-outward" class="text-stone-500" />
         </div>
