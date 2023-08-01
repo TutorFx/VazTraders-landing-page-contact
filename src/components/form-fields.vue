@@ -31,7 +31,7 @@ import { ZodError } from 'zod'
 import { useToast } from 'vue-toastification'
 
 
-
+const router = useRouter();
 const schema = FormSchema();
 
 const default_value = { email: '', nome: '', celular: '' }
@@ -60,6 +60,7 @@ const trigger = async () => {
     toast.success('Obrigado por inscrever-se')
     state.value = { ...default_value };
     isTouched.value = false;
+    router.push({ path: 'obrigado' })
   } catch (e) {
     if (e instanceof ZodError) {
       console.error('Invalid Form Data')
