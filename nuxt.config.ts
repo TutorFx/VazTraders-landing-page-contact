@@ -79,6 +79,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
+      compra: 'https://pay.herospark.com/-183475',
+      whatsapp: 'https://wa.me/message/RUNWV6QFALJAG1',
       youtube: 'https://www.youtube.com/LuisVazTrader',
       instagram: 'https://instagram.com/oluisvaz',
       facebook: 'https://www.facebook.com/profile.php?id=100093435019657&mibextid=LQQJ4d'
