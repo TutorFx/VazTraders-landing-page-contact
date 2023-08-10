@@ -109,7 +109,7 @@
         </div>
         <div class="max-w-3xl max-md:px-6 mx-auto grid gap-10">
           <Transition enter-active-class="animate__animated animate__fadeInTopLeft"
-            leave-active-class="animate__animated animate__fadeOutBotRight">
+            leave-active-class="animate__animated animate__fadeOutBottomRight">
             <nuxt-img v-if="secondDolarVisible" src="/assets/images/dolar-3.png"
               class="hidden xl:block absolute -left-0" />
           </Transition>
