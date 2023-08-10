@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-clockbase text-light-100 min-h-[100svh] ">
+  <div class="bg-clockbase text-light-100 min-h-[100svh]">
     <div class="md:mb-6">
       <div class="relative">
         <div class="relative md:absolute inset-0">
@@ -41,7 +41,8 @@
         </div>
       </div>
     </div>
-    <section class="bg-[url(/assets/images/welcome-bg-sm.jpg)] md:bg-[url(/assets/images/welcome-bg.jpg)] bg-contain bg-repeat-y max-w-7xl mx-auto mb-24 pb-24">
+    <section
+      class="bg-[url(/assets/images/welcome-bg-sm.jpg)] md:bg-[url(/assets/images/welcome-bg.jpg)] relative bg-contain bg-repeat-y max-w-7xl mx-auto mb-24 pb-24">
       <div class="grid gap-6">
         <div>
           <div class="max-w-xl max-md:px-6 mx-auto text-center text-white">
@@ -52,10 +53,20 @@
           </div>
         </div>
         <div class="text-center">
-          <Icon class="text-yellow-500 my-6 animate-bounce" size="40" name="mdi:chevron-down" />
+          <Icon class="text-yellow-500 my-6 float" size="40" name="mdi:chevron-down" />
         </div>
-        <div class="max-w-2xl max-md:px-6 mx-auto text-center text-white grid gap-12 mb-12">
-          <div class="max-w-xl max-md:px-6 mx-auto text-center text-white text-xl md:text-3xl">
+        <div class="relative max-w-2xl max-md:px-6 mx-auto text-center text-white grid gap-12 mb-12">
+          <Transition enter-active-class="animate__animated animate__fadeInRight"
+            leave-active-class="animate__animated animate__fadeOutLeft">
+            <nuxt-img v-if="firstDolarVisible" src="/assets/images/dolar-0.png"
+              class="hidden xl:block absolute -left-40" />
+          </Transition>
+          <Transition enter-active-class="animate__animated animate__fadeInLeft"
+            leave-active-class="animate__animated animate__fadeOutRight">
+            <nuxt-img v-if="firstDolarVisible" src="/assets/images/dolar-1.png"
+              class="hidden xl:block absolute -right-40" />
+          </Transition>
+          <div ref="targetone" class="max-w-xl max-md:px-6 mx-auto text-center text-white text-xl md:text-3xl">
             Eu sou o <span class="font-bold">Luis Vaz</span> e estou muito animado
             em apresentar a
             <span class="bg-clip font-black whitespace-nowrap">Vaz MasterClass</span>
@@ -94,10 +105,15 @@
           </div>
         </div>
         <div class="text-center">
-          <Icon class="text-yellow-500 my-6 animate-bounce" size="40" name="mdi:chevron-down" />
+          <Icon class="text-yellow-500 my-6 float" size="40" name="mdi:chevron-down" />
         </div>
         <div class="max-w-3xl max-md:px-6 mx-auto grid gap-10">
-          <div class="max-w-3xl text-white text-center text-lg">
+          <Transition enter-active-class="animate__animated animate__fadeInTopLeft"
+            leave-active-class="animate__animated animate__fadeOutBotRight">
+            <nuxt-img v-if="secondDolarVisible" src="/assets/images/dolar-3.png"
+              class="hidden xl:block absolute -left-0" />
+          </Transition>
+          <div ref="targettwo" class="max-w-3xl text-white text-center text-xl relative">
             Com base de <span class="bg-clip font-black">12 anos</span> de experiência no mercado financeiro, desenvolvi a
             <span class="bg-clip font-black whitespace-nowrap">Vaz MasterClass</span>, ela aborda desde os
             conceitos básicos até as estratégias avançadas, tudo para que você tenha segurança
@@ -117,7 +133,7 @@
           </div>
         </div>
         <div class="text-center">
-          <Icon class="text-yellow-500 my-6 animate-bounce" size="40" name="mdi:chevron-down" />
+          <Icon class="text-yellow-500 my-6 float" size="40" name="mdi:chevron-down" />
         </div>
         <div class="max-w-3xl max-md:px-6 mx-auto text-light text-white">
           <div class="grid md:grid-cols-2 gap-6 items-center">
@@ -200,7 +216,7 @@
           </nuxt-link>
         </div>
         <div class="text-center">
-          <Icon class="text-yellow-500 my-6 animate-bounce" size="40" name="mdi:chevron-down" />
+          <Icon class="text-yellow-500 my-6 float" size="40" name="mdi:chevron-down" />
         </div>
         <div class="max-w-3xl max-md:px-6 mx-auto text-light text-xl text-center text-white">
           Ou entre em contato para tirar suas <br> dúvidas <span class="text-[#efbe50] font-bold">agora mesmo.</span>
@@ -230,4 +246,25 @@
 </template>
 
 <script setup lang="ts">
+import 'animate.css';
+import { useIntersectionObserver } from '@vueuse/core'
+
+const targetone = ref(null)
+const targettwo = ref(null)
+const firstDolarVisible = ref(false)
+const secondDolarVisible = ref(false)
+
+useIntersectionObserver(
+  targetone,
+  ([{ isIntersecting }]) => {
+    firstDolarVisible.value = isIntersecting
+  }
+)
+
+useIntersectionObserver(
+  targettwo,
+  ([{ isIntersecting }]) => {
+    secondDolarVisible.value = isIntersecting
+  }
+)
 </script>
