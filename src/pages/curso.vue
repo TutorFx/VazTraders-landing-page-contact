@@ -167,7 +167,7 @@
           </nuxt-link>
         </div>
         <div class="max-w-3xl max-md:px-6 mx-auto text-light text-xl text-center text-white">
-          Ou entre em contato para tirar suas <br> dúvidas <span class="text-[#efbe50] font-bold">agora mesmo.</span>
+          Ou entre em contato para tirar suas <br class="max-md:hidden"> dúvidas <span class="text-[#efbe50] font-bold">agora mesmo.</span>
         </div>
         <div class="text-center">
           <nuxt-link :href="useRuntimeConfig().public.whatsapp">
@@ -219,7 +219,7 @@
           <Icon class="text-yellow-500 my-6 float" size="40" name="mdi:chevron-down" />
         </div>
         <div class="max-w-3xl max-md:px-6 mx-auto text-light text-xl text-center text-white">
-          Ou entre em contato para tirar suas <br> dúvidas <span class="text-[#efbe50] font-bold">agora mesmo.</span>
+          Ou entre em contato para tirar suas <br class="max-md:hidden"> dúvidas <span class="text-[#efbe50] font-bold">agora mesmo.</span>
         </div>
         <div class="text-center">
           <nuxt-link :href="useRuntimeConfig().public.whatsapp">
