@@ -67,6 +67,7 @@ export default defineNuxtConfig({
   css: ['@/assets/styles.scss'],
   routeRules: {
     '/': { static: true },
+    '/curso': { static: true },
   },
   vite: {
     css: {
