@@ -184,6 +184,55 @@ const path = [
   }
 ]
 
+const desire = [
+  { content: 'Viver uma imersão intensiva buscando o desenvolvimento pessoal e financeiro.' },
+  { content: 'Identificar e romper com crenças que possam estar limitando o seu potencial de prosperidade.' },
+  { content: 'Deixar de lado o medo de fracassar e abraçar o desenvolvimento contínuo para alcançar seus objetivos.' },
+  { content: 'Melhorar seu relacionamento com o dinheiro e alcançar uma maior estabilidade financeira.' },
+  { content: 'Equilibrar sua saúde física e mental na busca pela prosperidade.' },
+  { content: 'Se conectar com uma comunidade que busca o amadurecimento e a prosperidade.' },
+  { content: 'Descobrir o verdadeiro propósito que impulsiona sua vida e sua carreira.' },
+  { content: 'Priorizar o investimento no seu crescimento pessoal como estratégia para uma vida mais próspera.' },
+  { content: 'Criar um plano de vida alinhado com seus valores pessoais.' },
+  { content: 'Obter as ferramentas e insights necessários para prosperar em todas as áreas da sua vida.' }
+]
+
+const questions = [
+  {
+    title: 'Será apenas presencial?',
+    content: 'Sim, serão dois dias de imersão presencial que irão transformar a sua vida.'
+  },
+  {
+    title: 'Onde acontecerá a The Vaz Experience?',
+    content: `O evento acontecerá no Centro de Convenções e Eventos Paulo Machado que fica no endereço: Avenida Copacabana 190, Lazulli Corporate Offices, 3º andar - Empresarial 18 do Forte, Sala 303 Alphaville - Barueri - SP CEP: 06472-001`
+  },
+  {
+    title: 'Em que hora e em que data acontecerá o evento?',
+    content: `The Vaz Experience acontecerá nos dias 16 e 17 de Dezembro e irá começar às 9:00 da manhã e terminará por volta das 23:00 da noite. Mesmo horário nos dois dias.`
+  },  
+  {
+    title: 'Quantas horas durarão o evento?',
+    content: `The Vaz Experience será uma imersão de mais de 13 horas em cada dia, onde você irá vivenciar uma transformação profunda nas principais áreas da sua vida.`
+  },  
+  {
+    title: 'Será um evento religioso?',
+    content: `Não, The Vaz Experience é um evento para todos aqueles que desejam prosperar em todas as áreas da vida.`
+  },  
+  {
+    title: 'Quais são as formas de pagamento?',
+    content: `O pagamento pode ser realizado com cartão de crédito em até 10 vezes, boleto ou pix.`
+  },  
+  {
+    title: 'O pagamento é seguro?',
+    content: `Sim, garantimos que todas as transações sejam seguras e protegidas. Utilizamos tecnologias de criptografia para proteger suas informações pessoais.`
+  },  
+  {
+    title: 'Não encontrou resposta para a sua dúvida?',
+    content: `Não encontrou a informação que procurava?
+    Entre em contato com o suporte que responderemos todas as suas dúvidas.`
+  },
+]
+
 export const useXpData = () => ({
-  path
+  path, desire, questions
 })
