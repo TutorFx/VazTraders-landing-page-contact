@@ -3,5 +3,6 @@
     <xp-hero />
     <xp-sections-whatis />
     <xp-sections-transform />
+    <xp-sections-desires />
   </div>
 </template>
