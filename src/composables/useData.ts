@@ -28,15 +28,15 @@ const aboutCourse = [
   {
     icon: 'analise.png',
     title: /* html */`<span class="text-sm">Análises gráficas + Estratégias rentáveis</span>`,
-  }, 
+  },
   {
     icon: 'debate.png',
     title: /* html */`<span class="text-sm"><b>Mentalidade</b> obrigatória para atrair resultados consistentes</span>`,
-  }, 
+  },
   {
     icon: 'lucros.png',
     title: /* html */`<span class="text-sm">Forex lucrativo<br> e simples</span>`,
-  }, 
+  },
   {
     icon: 'lucro.png',
     title: /* html */`<span class="text-sm"><b>Educação financeira</b> para <br> sair das dívidas</span>`,
@@ -44,75 +44,75 @@ const aboutCourse = [
 ] as ICard[];
 
 const aboutLessons = [
-  { 
+  {
     number: 0,
     title: "Como configurar a plataforma"
   },
-  { 
+  {
     number: 1,
     title: "Gerenciamento Financeiro"
   },
-  { 
+  {
     number: 2,
     title: "Suporte e Resistência"
   },
-  { 
+  {
     number: 3,
     title: "Pullback"
   },
-  { 
+  {
     number: 4,
     title: "Indicadores"
   },
-  { 
+  {
     number: 5,
     title: "Confluências"
   },
-  { 
+  {
     number: 6,
     title: "Pivô"
   },
-  { 
+  {
     number: 7,
     title: "Fibonacci"
   },
-  { 
+  {
     number: 8,
     title: "Thevaztadora"
   },
-  { 
+  {
     number: 9,
     title: "Figuras gráficas"
   },
-  { 
+  {
     number: 10,
     title: "Projeção de canal"
   },
-  { 
+  {
     number: 11,
     title: "Operacionais em M1"
   },
-  { 
+  {
     number: 12,
     title: "Caixa"
   },
-  { 
+  {
     number: 13,
     title: "Você está pronto para prosperar?"
   },
-  { 
+  {
     number: 14,
     title: "Base e introdução no mercado de Forex"
   },
-  { 
+  {
     number: 15,
     title: "Estratégias de Negociação no Mercado de Forex"
   },
-  { 
+  {
     number: 16,
     title: "Estratégias de Negociação no Mercado de Forex"
   },
-  { 
+  {
     number: 17,
     title: "Saúde Financeira - Como organizar suas finanças"
   }
@@ -120,32 +120,32 @@ const aboutLessons = [
 
 const aboutAccess = [
   {
-      number: 1,
-      title: "Certificado de conclusão ao finalizar a MasterClass"
+    number: 1,
+    title: "Certificado de conclusão ao finalizar a MasterClass"
   },
   {
-      number: 2,
-      title: "Apostila para acompanhar todas as aulas"
+    number: 2,
+    title: "Apostila para acompanhar todas as aulas"
   },
   {
-      number: 3,
-      title: "Sorteio de livros indicados"
+    number: 3,
+    title: "Sorteio de livros indicados"
   },
   {
-      number: 4,
-      title: "Acesso à planilhas para te ajudar a organizar sua vida financeira"
+    number: 4,
+    title: "Acesso à planilhas para te ajudar a organizar sua vida financeira"
   },
   {
-      number: 5,
-      title: "PDFs de apoio ao seu estudo"
+    number: 5,
+    title: "PDFs de apoio ao seu estudo"
   },
   {
-      number: 6,
-      title: "Suporte no WhatsApp para tirar todas as suas dúvidas"
+    number: 6,
+    title: "Suporte no WhatsApp para tirar todas as suas dúvidas"
   },
   {
-      number: 7,
-      title: "Acesso à plataforma exclusiva durante 1 ano"
+    number: 7,
+    title: "Acesso à plataforma exclusiva durante 1 ano"
   }
 ];
 
@@ -154,3 +154,36 @@ export const useData = () => {
     aboutlives, aboutCourse, aboutLessons, aboutAccess
   }
 }
+
+const path = [
+  {
+    title: 'PROSPERIDADE INTEGRAL',
+    content: /* html */`Vamos explorar os princípios fundamentais que nos levam a prosperar em todas as áreas da vida.
+    Você irá aprender a interpretar os altos e baixos da sua vida para que a partir daí, possa planejar uma vida próspera de maneira assertiva.`
+  },
+  {
+    title: 'UM PLANO DE VIDA PROSPERA',
+    content: /* html */`A prosperidade não é aleatória, ela é fruto de planejamento. 
+    E aqui você irá identificar os obstáculos que estão bloqueando o seu caminho para a prosperidade, e aprenderá a superá-los identificando seus objetivos e 
+    traçando um caminho claro e consistente para atingi-los.`
+  },
+  {
+    title: 'VALORES E ESPIRITUALIDADE',
+    content: /* html */`Os valores que cultivamos, juntamente com nossos relacionamentos e espiritualidade, podem nos orientar em direção a uma vida verdadeiramente próspera e significativa.
+    Vamos identificar onde você pode fortalecer essas conexões e criar novas oportunidades de crescimento.`
+  },
+  {
+    title: 'PROSPERANDO COM VITALIDADE',
+    content: /* html */`A prosperidade demanda um equilíbrio entre finanças, saúde e bem-estar. 
+    Sem essa harmonia, não podemos desfrutar plenamente os frutos da prosperidade e nem enfrentar os obstáculos que se opõem a ela. Vamos analisar onde há equilíbrio e identificar onde pode ser aprimorado.`
+  },
+  {
+    title: 'AVALIAÇÃO NA PROSPERIDADE INTEGRAL',
+    content: /* html */`Para que possamos desfrutar de uma prosperidade duradoura, é essencial que permaneçamos atentos às nossas tendências, o que nos permitirá identificar os sinais que nos conduzirão em direção ao nosso propósito. 
+    A prosperidade em todas as áreas da vida.`
+  }
+]
+
+export const useXpData = () => ({
+  path
+})
