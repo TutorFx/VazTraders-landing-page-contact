@@ -7,13 +7,13 @@
                 </div>
                 <div>
                     <div class="grid gap-3 max-w-xs">
-                        <nuxt-link to="#">
+                        <nuxt-link href="https://sun.eduzz.com/2091427">
                             <button class="golden-bg-xp text-black px-4 py-2 font-black rounded-2xl text-lg text-center">
                                 GARANTA JÁ SUA VAGA
                             </button>
                         </nuxt-link>
                         <div class="text-center">
-                            [*Vagas Limitadas - Compra 100% segura]
+                            Vagas Limitadas - Compra 100% segura
                         </div>
                     </div>
                 </div>

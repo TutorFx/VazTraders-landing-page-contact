@@ -22,9 +22,9 @@
         </div>
       </div>
       <div class="grid justify-center">
-        <div>
+        <nuxt-link href="https://sun.eduzz.com/2091427">
           <button class="text-center uppercase text-white bg-black p-3 px-6 rounded-lg font-black text-2xl">THE VAZ EXPERIENCE É PARA MIM</button>
-        </div>
+        </nuxt-link>
       </div>
     </div>
   </div>
