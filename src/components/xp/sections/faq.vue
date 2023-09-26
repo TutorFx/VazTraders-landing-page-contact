@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="grid justify-center">
-        <a href="https://wa.me/message/RUNWV6QFALJAG1" target="_blank">
+        <a :href="useWhatsappToken()" target="_blank">
           <button
             class="text-center uppercase text-white bg-black p-3 px-12 rounded-lg font-black text-2xl">WHATSAPP</button>
         </a>
