@@ -4,6 +4,6 @@ export const useBuyExperience = async () => {
   try {
     await $fetch('/api/v1/buy-experience', { method: 'POST', headers, query: { ...route.query, name: route.name }, body: { action: 'Comprar VazExperience' } })
   } finally {
-    window.open('https://sun.eduzz.com/2091427', '_blank');
+    window.open('https://sun.eduzz.com/2091427');
   }
 }
