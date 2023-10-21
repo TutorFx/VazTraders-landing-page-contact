@@ -31,6 +31,7 @@ import { ZodError } from 'zod'
 import { useToast } from 'vue-toastification'
 
 
+const route = useRoute();
 const router = useRouter();
 const schema = FormSchema();
 
@@ -55,7 +56,7 @@ const trigger = async () => {
   isTouched.value = true;
   try {
     schema.parse(state.value)
-    await $fetch('/api/v1/send', { body: state.value, method: 'POST' })
+    await $fetch('/api/v1/send', { body: { ...state.value, action: route.name }, method: 'POST' })
     const toast = useToast();
     toast.success('Obrigado por inscrever-se')
     state.value = { ...default_value };
