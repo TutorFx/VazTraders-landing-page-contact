@@ -31,10 +31,10 @@
               </div>
               <div class="grid gap-3">
                 <div>
-                  <button
+                  <nuxt-link href="https://oluisvaz.rds.land/mastervaz-2-0"
                     class="golden-bg-xp px-6 py-3 font-black rounded-2xl text-lg text-center text-black">
                     QUERO PARTICIPAR DO TORNEIO MASTER VAZ
-                  </button>
+                  </nuxt-link>
                 </div>
                 <div>
                   *Vagas limitadas.
