@@ -72,6 +72,7 @@ const trigger = async () => {
   isTouched.value = true;
   try {
     schema.parse(state.value)
+
     await $fetch('/api/v1/send', { body: { ...state.value, action: route.name }, method: 'POST' })
     const toast = useToast();
     toast.success('Obrigado por inscrever-se')
