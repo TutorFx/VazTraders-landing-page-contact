@@ -4,7 +4,7 @@
       <nuxt-img class="hidden lg:block" src="/assets/images/v2/hero.png" />
       <nuxt-img class="lg:hidden" src="/assets/images/v2/hero-md.png" />
     </div>
-    <div class="lg:aspect-[1920/1211] grid items-center">
+    <div class="lg:aspect-[1920/1211] grid items-center" id="Hero">
       <div class="grid py-16 px-6 lg:px-12 relative">
         <div class="grid gap-3">
           <div class="text-white text-6xl font-black">
