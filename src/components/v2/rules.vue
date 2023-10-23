@@ -39,8 +39,10 @@
         </div>
         <div class="grid gap-3 max-w-lg">
           <div class="grid">
-            <nuxt-link href="https://oluisvaz.rds.land/mastervaz-2-0" class="golden-bg-xp text-black px-4 py-3 font-black rounded-2xl text-md text-center">
-              QUERO APROVEITAR ESTA OPORTUNIDADE
+            <nuxt-link href="https://oluisvaz.rds.land/mastervaz-2-0">
+              <button class="golden-bg-xp text-black px-4 py-3 font-black rounded-2xl text-md text-center">
+                QUERO APROVEITAR ESTA OPORTUNIDADE
+              </button>
             </nuxt-link>
           </div>
           <div class="text-sm">
