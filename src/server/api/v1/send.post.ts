@@ -29,11 +29,16 @@ export default defineEventHandler(async (event) => {
       ]
     );
 
+    const SheetName = () => {
+      if ( body.action === "MasterVaz" ) return "MasterVaz";
+      return "Cadastro"
+    }
+
     const sheets = google.sheets({ version: "v4", auth });
     // @ts-expect-error
     await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.SHEET_ID,
-      range: "Cadastro!A3",
+      range: `${SheetName()}!A3`,
       valueInputOption: "USER_ENTERED",
       resource: {
         values: [

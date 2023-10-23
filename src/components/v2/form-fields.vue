@@ -47,7 +47,6 @@ import { FetchError } from 'ofetch'
 import { ZodError } from 'zod'
 import { useToast } from 'vue-toastification'
 
-
 const route = useRoute();
 const router = useRouter();
 const schema = FormSchema();
